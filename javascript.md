@@ -19,5 +19,11 @@
   A = Boolean('false'); // return true
   A = !!'false'; // also return true
 
+- reverse().forEach() vs. reversal iteration(see [here](http://jsperf.com/reverse-foreach-vs-reversal-iteration))
+  ```javascript
+  // fastest
+  pole.each(function(pole) {}, pole.length - 1, 0);
 
-
+  // slow
+  pole.reverse().forEach(function(pole) {});
+  ```
